@@ -12,8 +12,15 @@ A little about me:
 A meme that captures how I currently **feel** about my university studies is <br> 
 ![Too much to do](https://media.tenor.com/7syMXCG063AAAAAM/shark-in-the-suit-office-job.gif)
 
+- I
+- Like
+- Mangos
+- And
+- Blueberries
 
 ## Links to other websites
 1. Nice Music [Forgotten Temple](https://www.youtube.com/watch?v=ss69uG_swp8&list=PLyWv2ariRZPwDr0ZaZnJJxVoMgGUq1I80&index=8) to keep the mind *relaxed*.
 2. **Click** button on site for random [useless website](https://theuselessweb.com/).
 3. Site for [Ambient noises](https://asoftmurmur.com/)
+
+[Inspo meme](https://knowyourmeme.com/memes/cant-you-take-anything-seriously-too-serious--2)
