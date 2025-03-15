@@ -14,9 +14,9 @@ A meme that captures how I currently **feel** about my university studies is <br
 
 - I
 - Like
-- Mangos
+- **Mangos**
 - And
-- Blueberries
+- **Blueberries**
 
 ## Links to other websites
 1. Nice Music [Forgotten Temple](https://www.youtube.com/watch?v=ss69uG_swp8&list=PLyWv2ariRZPwDr0ZaZnJJxVoMgGUq1I80&index=8) to keep the mind *relaxed*.
