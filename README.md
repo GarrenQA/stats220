@@ -23,4 +23,3 @@ A meme that captures how I currently **feel** about my university studies is <br
 2. **Click** button on site for random [useless website](https://theuselessweb.com/).
 3. Site for [Ambient noises](https://asoftmurmur.com/)
 
-[Inspo meme](https://knowyourmeme.com/memes/cant-you-take-anything-seriously-too-serious--2)
