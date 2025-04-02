@@ -72,6 +72,6 @@ There could be a correlation between the two graphs on being able to skip multip
 ___________________________________________________________________________
 Current number of Ads collected: `r nrow(latest_data)`
 
-The mean length of all YouTube Ads collected is `r mean(latest_data$ad_length)` which shows the average length of ads in minutes.
+The mean **length** of all YouTube Ads collected is `r mean(latest_data$ad_length)` which shows the average length of ads in minutes.
 
-The shortest YouTube ad is `r min(latest_data$ad_length)` and the longest is `r max(latest_data$ad_length)`
+The **shortest** YouTube ad is `r min(latest_data$ad_length)` and the **longest** is `r max(latest_data$ad_length)`
