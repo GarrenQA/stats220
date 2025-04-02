@@ -1,0 +1,75 @@
+---
+title: My dynamic report
+output: html_fragment
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo=FALSE, message=FALSE, warning=FALSE, error=FALSE)
+library(tidyverse)
+```
+
+```{css}
+body {
+  background-color: #F1F0E8;
+}
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+p {
+  font-family: 'Arial';
+}
+
+```
+
+## Youtube Ad Anaylsis
+
+The purpose of this report is to observe potential trends, features, and aspects of YouTube Advertisements that is shown to users of the platform. Patterns of skippable Ads or the general length can potentially tell us more about recent YouTube Ad policies. 
+
+```{r}
+logged_data <- read.csv('https://docs.google.com/spreadsheets/d/e/2PACX-1vSF9wDfHKWAQf0DLe_zv5lr2vB0nl_AeZcDitlRMV8cPs1MCayRSPwmWsCzKnz8oVwf8-ZTuf5r4Wuv/pub?output=csv')
+
+# Takes the read CSV data frame and renames the columns
+latest_data <- logged_data %>%
+  rename(ad_about = 2,
+         ad_length = 3,
+         number_of_ads = 4,
+         skippable = 5)
+
+ggplot(data = latest_data) +
+  geom_bar(aes(x = skippable, fill = skippable)) +
+  labs(title = "Number of skippable versus unskippable ads",
+       x = "Ad Skippability",
+       y = "Count of Ads") +
+  scale_fill_manual(values = c("No" = "#C96868",
+                               "Yes" = "#A5B68D")) +
+  scale_y_continuous(labels = scales::comma_format(accuracy = 1),)
+
+
+
+ggplot(data = latest_data) +
+  geom_bar(aes(x = number_of_ads, fill = number_of_ads)) +
+  labs(title = "How Often Are Multiple Ads Played in One Ad Session",
+       x = "Multiple Ads together",
+       y = "Count of Ads") +
+  scale_y_continuous(labels = scales::comma_format(accuracy = 1))
+
+```
+
+First graph shows if the single or the first of multiple ads in one session is skippable.
+
+Second graph is how many ads are played in one session. Only single, double, and triple ads is measured, because any higher would be very rare to come across.
+
+There could be a correlation between the two graphs on being able to skip multiple ads and **not** able to skip shorter single ads.
+
+
+<br>
+
+
+### Summary of Ad length data
+___________________________________________________________________________
+Current number of Ads collected: `r nrow(latest_data)`
+
+The mean length of all YouTube Ads collected is `r mean(latest_data$ad_length)` which shows the average length of ads in minutes.
+
+The shortest YouTube ad is `r min(latest_data$ad_length)` and the longest is `r max(latest_data$ad_length)`
