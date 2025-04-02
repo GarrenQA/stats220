@@ -44,9 +44,12 @@ ggplot(data = latest_data) +
   scale_fill_manual(values = c("No" = "#C96868",
                                "Yes" = "#A5B68D")) +
   scale_y_continuous(labels = scales::comma_format(accuracy = 1),)
+```
 
-
-
+First graph shows if the single or the first of multiple ads in one session is skippable.
+<br>
+<br>
+```{r}
 ggplot(data = latest_data) +
   geom_bar(aes(x = number_of_ads, fill = number_of_ads)) +
   labs(title = "How Often Are Multiple Ads Played in One Ad Session",
@@ -56,9 +59,8 @@ ggplot(data = latest_data) +
 
 ```
 
-First graph shows if the single or the first of multiple ads in one session is skippable.
-
 Second graph is how many ads are played in one session. Only single, double, and triple ads is measured, because any higher would be very rare to come across.
+
 
 There could be a correlation between the two graphs on being able to skip multiple ads and **not** able to skip shorter single ads.
 
