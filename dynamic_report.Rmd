@@ -24,7 +24,7 @@ p {
 
 ## Youtube Ad Anaylsis
 
-The purpose of this report is to observe potential trends, features, and aspects of YouTube Advertisements that is shown to users of the platform. Patterns of skippable Ads or the general length can potentially tell us more about recent YouTube Ad policies. 
+The purpose of this report is to identify potential trends, features, and characteristics of YouTube advertisements shown to platform users. By analyzing patterns in skippable ads and ad lengths, we can gain insights into recent changes in YouTube's advertising policies.
 
 ```{r}
 logged_data <- read.csv('https://docs.google.com/spreadsheets/d/e/2PACX-1vSF9wDfHKWAQf0DLe_zv5lr2vB0nl_AeZcDitlRMV8cPs1MCayRSPwmWsCzKnz8oVwf8-ZTuf5r4Wuv/pub?output=csv')
@@ -59,10 +59,10 @@ ggplot(data = latest_data) +
 
 ```
 
-Second graph is how many ads are played in one session. Only single, double, and triple ads is measured, because any higher would be very rare to come across.
+The second graph shows the number of ads played in a single session. Only single, double, and triple ads are measured, as higher counts are considered rare.
 
 
-There could be a correlation between the two graphs on being able to skip multiple ads and **not** able to skip shorter single ads.
+There may be a correlation between the two graphs, where users are able to skip multiple ads but unable to skip shorter single ads
 
 
 <br>
