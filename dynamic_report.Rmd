@@ -27,7 +27,7 @@ p {
 
 ## Youtube Ad Anaylsis
 
-The purpose of this report is to identify potential trends, features, and characteristics of YouTube advertisements shown to platform users. 
+The purpose of this report is to identify potential trends, features, and characteristics of YouTube advertisements shown to platform users. <br>
 By analyzing patterns in skippable ads and ad lengths, we can gain insights into recent changes in YouTube's advertising policies.
 
 ```{r}
