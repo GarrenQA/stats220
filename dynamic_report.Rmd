@@ -9,9 +9,6 @@ library(tidyverse)
 ```
 
 ```{css}
-svg {
-  display: block;
-}
 body {
   background-color: #F1F0E8;
 }
